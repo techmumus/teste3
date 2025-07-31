@@ -10,7 +10,7 @@ LANDING_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpeza Express - Serviços de Limpeza Residencial</title>
+    <title>SuperLimpo - Serviços de Limpeza Residencial</title>
     <style>
         * {
             margin: 0;
@@ -120,7 +120,7 @@ LANDING_PAGE = """
 <body>
     <div class="container">
         <header>
-            <h1>Limpeza Express</h1>
+            <h1>SuperLimpo</h1>
             <p class="subtitle">Seu lar limpo e organizado com profissionais qualificados</p>
         </header>
         
@@ -139,17 +139,17 @@ LANDING_PAGE = """
         <div class="contact">
             <h2>Entre em Contato</h2>
             <p class="contact-info">
-                📱 WhatsApp: (11) 98765-4321<br>
-                📧 Email: contato@limpezaexpress.com.br<br>
+                📱 WhatsApp: (55) 98765-4321<br>
+                📧 Email: contato@superlimpo.com.br<br>
                 ⏰ Atendimento: Seg-Sex 8h às 18h | Sáb 8h às 14h
             </p>
-            <a href="https://wa.me/5511987654321" class="cta-button">
+            <a href="https://wa.me/5555987654321" class="cta-button">
                 Solicitar Orçamento pelo WhatsApp
             </a>
         </div>
         
         <footer class="footer">
-            <p>&copy; 2024 Limpeza Express. Todos os direitos reservados.</p>
+            <p>&copy; 2024 SuperLimpo. Todos os direitos reservados.</p>
         </footer>
     </div>
 </body>
