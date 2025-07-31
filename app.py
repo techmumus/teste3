@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-# HTML template for the landing page
+# HTML template for the landing page - DARK MODE
 LANDING_PAGE = """
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -21,8 +21,8 @@ LANDING_PAGE = """
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
+            color: #e0e0e0;
+            background-color: #0d1117;
         }
         
         .container {
@@ -32,34 +32,38 @@ LANDING_PAGE = """
         }
         
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #161b22;
+            color: #e0e0e0;
             text-align: center;
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 10px;
+            border: 1px solid #30363d;
         }
         
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+            color: #58a6ff;
         }
         
         .subtitle {
             font-size: 1.2rem;
-            opacity: 0.9;
+            opacity: 0.8;
+            color: #8b949e;
         }
         
         .services {
-            background-color: white;
+            background-color: #161b22;
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #30363d;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         
         .services h2 {
-            color: #2c3e50;
+            color: #58a6ff;
             margin-bottom: 1rem;
         }
         
@@ -68,8 +72,9 @@ LANDING_PAGE = """
         }
         
         .service-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #eee;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #30363d;
+            color: #c9d1d9;
         }
         
         .service-list li:last-child {
@@ -77,43 +82,65 @@ LANDING_PAGE = """
         }
         
         .contact {
-            background-color: white;
+            background-color: #161b22;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #30363d;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
             text-align: center;
         }
         
         .contact h2 {
-            color: #2c3e50;
+            color: #58a6ff;
             margin-bottom: 1rem;
         }
         
         .contact-info {
             font-size: 1.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            color: #c9d1d9;
+            line-height: 1.8;
         }
         
         .cta-button {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #238636;
             color: white;
             padding: 1rem 2rem;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 1.1rem;
+            font-weight: bold;
             transition: background-color 0.3s;
+            border: 1px solid #2ea043;
         }
         
         .cta-button:hover {
-            background-color: #2980b9;
+            background-color: #2ea043;
+            box-shadow: 0 0 10px rgba(35, 134, 54, 0.3);
         }
         
         .footer {
             text-align: center;
             margin-top: 2rem;
             padding: 1rem;
-            color: #666;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
